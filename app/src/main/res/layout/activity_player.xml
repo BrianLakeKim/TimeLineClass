@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity"
+    android:background="#272727"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="724px"
+        android:background="@color/black">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="#006e76"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="60px"
+            android:fontFamily="@font/font_eb"
+            android:textSize="50px"
+            android:textColor="@color/white"
+            android:text="1-1장 안드로이드 스튜디오 소개">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:fontFamily="@font/font_l"
+            android:textSize="50px"
+            android:textColor="@color/white"
+            android:text="김동현(Master)">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:orientation="vertical"
+        android:background="#222222">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="50px"
+            android:fontFamily="@font/font_r"
+            android:textColor="@color/white"
+            android:text="질문">
+        </TextView>
+
+        <LinearLayout
+            android:background="@drawable/border2"
+            android:layout_width="1400px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:textSize="40px"
+            android:textAlignment="gravity"
+            android:fontFamily="@font/font_r"
+            android:textColor="#e6e6e6"
+            android:text="질문 추가...">
+        </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_l"
+            android:textSize="50px"
+            android:text="아직 질문이 없습니다"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <!-- 기본 리니어 레이아웃 기본 설정 : orientation : 수직 -->
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginTop="160px"
+        android:layout_gravity="center"
+        android:src="@drawable/logoblue">
+    </ImageView>
+
+    <!-- 로그인 화면 : 로고 -->
+    <!-- 로고 속성 : 폭:300px, 넓이:300px, 마진Top:160px, gravity:중앙 -->
+
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="60px"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <!-- L1 속성 : 패딩:60px, orientation: 수직, gravity: 중앙 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_eb"
+            android:textAlignment="center"
+            android:textSize="80px"
+            android:textColor="@color/lightblue"
+            android:text="TimeLineClass">
+        </TextView>
+
+        <!-- 로그인 화면 : TimeLineClass 글자 -->
+        <!-- 속성 : 나눔스퀘어EB, 텍스트 중앙정렬, 사이즈80px -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_l"
+            android:textAlignment="center"
+            android:layout_marginTop="20px"
+            android:textSize="45px"
+            android:textColor="@color/lightblue"
+            android:text="학생용">
+        </TextView>
+
+        <!-- 로그인 화면 : 학생용 글자 -->
+        <!-- 속성 : 나눔스퀘어l, 텍스트 중앙정렬, 사이즈45px, 마진top:20px -->
+
+    </LinearLayout>
+
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- L2 속성 : orientation: 수직 -->
+
+        <EditText
+            android:layout_width="1000px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:ems="15"
+            android:background="@drawable/border"
+            android:id="@+id/logintext">
+            <!-- id값: logintext -->
+        </EditText>
+
+        <!-- 로그인 화면 : 텍스트 입력창 -->
+        <!-- 속성 : 가로폭: 1000px, 높이:150px, gravity:중앙, 텍스트 중앙정렬, inputtype적용 -->
+        <!-- 테두리 적용 -->
+
+    </LinearLayout>
+
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50px"
+        >
+        <!-- L3 속성 : orientation: 수직 -->
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:layout_width="400px"
+        android:layout_height="150px"
+        android:background="@drawable/buttonborderblue"
+        android:textAlignment="center"
+        android:fontFamily="@font_l"
+        android:textColor="@color/white"
+        android:text="로그인"
+        android:id="@+id/loginbtn">
+        <!-- id값: loginbtn -->
+    </Button>
+
+        <!-- 로그인 화면 : 로그인 버튼 -->
+        <!-- 속성 : 마진top:50px, 마진bottom:400px, 높이:150px, 테두리blue적용, 텍스트 중앙정렬 -->
+        <!-- 나눔스퀘어l, 텍스트컬러 : 하양 -->
+
+    </LinearLayout>
+
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="780px"
+        android:padding="20px">
+        <!-- L4 속성 : orientation: 수직, 마진top:780px, 패딩:20px -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:fontFamily="@font/font_l"
+            android:text="TimeLineClass 계정이 없으신가요?"
+            android:textAlignment="center"
+            android:textSize="50px">
+        </TextView>
+
+        <!-- 로그인 화면 : TimeLine계정이 없으신가요? 글자 -->
+        <!-- 속성 : 높이:90px, 나눔스퀘어l, 텍스트 중앙정렬, 텍스트사이즈 50px -->
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"
+            android:layout_width="400px"
+            android:layout_height="120px"
+            android:background="@drawable/border"
+            android:textAlignment="center"
+            android:fontFamily="@font_l"
+            android:textColor="#00cbd9"
+            android:text="회원가입"
+            android:id="@+id/registerbtn">
+            <!-- id값: registerbtn -->
+        </Button>
+
+        <!-- 로그인 화면 : 회원가입 버튼 -->
+        <!-- 속성 : 마진top:20px, 가로폭:400px, 높이:120px, 테두리적용, 텍스트 중앙정렬 -->
+        <!-- 나눔스퀘어l -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_marginTop="400px"
+            android:fontFamily="@font/font_l"
+            android:text="2022 TimeLineClass TeamProject"
+            android:textAlignment="center"
+            android:textColor="@color/lightblue"
+            android:textSize="30px">
+        </TextView>
+
+        <!-- 로그인 화면 : 2022TimeLineClass TeamProject 글자 -->
+        <!-- 속성 : 높이:40px, 마진top:400px, 나눔스퀘어l, 텍스트 중앙정렬, 사이즈30px -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_marginBottom="10px"
+            android:fontFamily="@font/font_l"
+            android:text="Design By Kim Jong Ok"
+            android:textAlignment="center"
+            android:textColor="@color/lightblue"
+            android:textSize="28px">
+        </TextView>
+
+        <!-- 로그인 화면 : Design By Kim Jong Ok 글자 -->
+        <!-- 속성 : 높이:40px, 마진bottom:10px, 나눔스퀘어l, 텍스트 중앙정렬, 텍스트사이즈 20px -->
+
+    </LinearLayout>
+
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+</LinearLayout>
