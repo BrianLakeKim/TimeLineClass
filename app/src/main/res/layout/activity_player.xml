@@ -46,7 +46,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250px"
+        android:layout_height="450px"
         android:orientation="vertical"
         android:background="#222222">
 
@@ -64,22 +64,84 @@
         <LinearLayout
             android:background="@drawable/border2"
             android:layout_width="1400px"
-            android:layout_height="wrap_content"
+            android:layout_height="200px"
             android:layout_gravity="center"
             android:paddingLeft="20px"
             android:layout_marginTop="20px"
             android:layout_marginBottom="20px">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="30px"
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
             android:textSize="40px"
             android:textAlignment="gravity"
             android:fontFamily="@font/font_r"
-            android:textColor="#e6e6e6"
-            android:text="질문 추가...">
-        </TextView>
+            android:textColorHint="@color/white"
+            android:inputType="none"
+            android:hint="질문 추가...">
+        </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="930px"
+                android:layout_height="100px"
+                android:paddingLeft="10px"
+                android:layout_gravity="center"
+                android:background="@drawable/border3"
+                android:layout_marginLeft="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="40px"
+                    android:text="등록된 시간 : "
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font_l"
+                    android:textAlignment="center">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="200px"
+                    android:text="00:00 "
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font_l"
+                    android:textAlignment="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="30px"
+                android:layout_width="105px"
+                android:layout_height="105px"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/plusbutton"
+                android:id="@+id/deleteCardView">
+                <!-- '삭제 버튼' : id값:deleteCardView -->
+            </ImageView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="110px"
+                android:layout_marginLeft="20px"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/border3"
+                android:text="등록하기">
+            </Button>
 
         </LinearLayout>
 
@@ -88,8 +150,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="472dp"
-        android:layout_marginTop="40px"
+        android:layout_height="410dp"
+        android:layout_marginTop="120px"
         android:layout_marginLeft="20px"
         android:orientation="vertical">
 

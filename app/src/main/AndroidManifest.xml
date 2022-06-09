@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TimeLineClass">
         <activity
+            android:name=".Play2Activity"
+            android:exported="false" />
+        <activity
             android:name=".PlayerActivity"
             android:exported="false" />
         <activity

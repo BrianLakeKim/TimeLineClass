@@ -41,11 +41,25 @@
             android:textAlignment="center"
             android:inputType="text"
             android:ems="15"
-            android:hint="입력해주세요"
+            android:hint="ID"
             android:background="@drawable/border2"
-            android:id="@+id/registertext">
-            <!-- id값: registertext -->
+            android:id="@+id/registerid">
+            <!-- id값: registerid -->
         </EditText>
+
+    <EditText
+        android:layout_marginTop="30px"
+        android:layout_width="1100px"
+        android:layout_height="150px"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:ems="15"
+        android:background="@drawable/border"
+        android:id="@+id/registerpassword">
+        <!-- id값: registerpassword -->
+    </EditText>
 
 
         <TextView
@@ -67,7 +81,7 @@
 
         <TextView
             android:layout_width="1100px"
-            android:layout_height="1250px"
+            android:layout_height="1050px"
             android:background="@drawable/border2"
             android:layout_marginTop="60px"
             android:layout_gravity="center"

@@ -72,10 +72,25 @@
             android:layout_gravity="center"
             android:textAlignment="center"
             android:inputType="text"
+            android:hint="ID"
             android:ems="15"
             android:background="@drawable/border"
-            android:id="@+id/logintext">
-            <!-- id값: logintext -->
+            android:id="@+id/loginid">
+            <!-- id값: loginid -->
+        </EditText>
+
+        <EditText
+            android:layout_marginTop="30px"
+            android:layout_width="1000px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:ems="15"
+            android:background="@drawable/border"
+            android:id="@+id/loginpassword">
+            <!-- id값: loginpassword -->
         </EditText>
 
         <!-- 로그인 화면 : 텍스트 입력창 -->
@@ -159,7 +174,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40px"
-            android:layout_marginTop="400px"
+            android:layout_marginTop="220px"
             android:fontFamily="@font/font_l"
             android:text="2022 TimeLineClass TeamProject"
             android:textAlignment="center"

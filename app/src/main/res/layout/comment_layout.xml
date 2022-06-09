@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#222222"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <!-- 카드뷰 시작 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- L1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- L1-1 -->
+
+                <TextView
+                    android:id="@+id/studentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/font_l"
+                    android:text="이름"
+                    android:layout_margin="10dp"/>
+
+                <!-- '이름' : id값:studentName -->
+
+                <TextView
+                    android:id="@+id/videoTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/font_l"
+                    android:text="타임마커"
+                    android:textColor="#00cbd9" />
+
+                <!-- '타임마커' : id값:videoTime -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border3"
+                    android:padding="10px"
+                    android:fontFamily="@font/font_l"
+                    android:textSize="35px"
+                    android:text="수정하기"
+                    android:textColor="@color/white"
+                    android:id="@+id/editcomment">
+                </TextView>
+
+                <!-- '수정하기' : id값:editcomment -->
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30px"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/xbutton"
+                    android:id="@+id/deleteCardView">
+                    <!-- '삭제 버튼' : id값:deleteCardView -->
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commentContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font_l"
+                android:text="질문 내용"
+                android:layout_margin="10dp"/>
+
+            <!-- '질문 내용' : id값:commentContent -->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
