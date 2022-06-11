@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="300px"
         android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/lightblue">
 
         <TextView
             android:layout_marginTop="50px"
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_eb"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="75px"
             android:text="TimeLineClass">
         </TextView>
@@ -30,16 +30,259 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_l"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:text="학생용">
         </TextView>
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/videoRecycler"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 스크롤 뷰 적용 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <!-- 카드뷰 시작 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- L1 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- L1-1 -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_eb"
+                        android:text="1-1장 안드로이드 스튜디오 소개"
+                        android:layout_margin="10dp"/>
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="550px"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/playbtn"
+                        android:backgroundTint="@color/black">
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/font_l"
+                    android:text="김동현(Master)"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 첫번째 카드뷰 끝 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <!-- 카드뷰 시작 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- L2 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- L2-1 -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_eb"
+                        android:text="1-2장 안드로이드 스튜디오 기능"
+                        android:layout_margin="10dp"/>
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="550px"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/playbtn"
+                        android:backgroundTint="@color/black">
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/font_l"
+                    android:text="김동현(Master)"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 두번째 카드뷰 끝 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <!-- 카드뷰 시작 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- L3 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- L3-1 -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_eb"
+                        android:text="2-1장 클래스의 상속 "
+                        android:layout_margin="10dp"/>
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="775px"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/playbtn"
+                        android:backgroundTint="@color/black">
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/font_l"
+                    android:text="김동현(Master)"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 세번째 카드뷰 끝 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:backgroundTint="#90FFFFFF"
+            android:background="@drawable/listloading">
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1290px"
+        android:layout_marginBottom="10px">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:fontFamily="@font/font_l"
+        android:text="2022 TimeLineClass TeamProject"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        android:textSize="30px">
+    </TextView>
+
+    <!-- 로그인 화면 : 2022TimeLineClass TeamProject 글자 -->
+    <!-- 속성 : 높이:40px, 마진top:400px, 나눔스퀘어l, 텍스트 중앙정렬, 사이즈30px -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:fontFamily="@font/font_l"
+        android:text="Design By Kim Jong Ok"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        android:textSize="28px">
+    </TextView>
+
+    </LinearLayout>
 
 
 
