@@ -75,7 +75,7 @@
             android:hint="ID"
             android:ems="15"
             android:background="@drawable/border"
-            android:id="@+id/loginid">
+            android:id="@+id/loginEdit">
             <!-- id값: loginid -->
         </EditText>
 
@@ -120,7 +120,7 @@
         android:fontFamily="@font_l"
         android:textColor="@color/white"
         android:text="로그인"
-        android:id="@+id/loginbtn">
+        android:id="@+id/loginBtn">
         <!-- id값: loginbtn -->
     </Button>
 

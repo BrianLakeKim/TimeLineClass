@@ -10,8 +10,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="724px"
-        android:background="@color/black">
+        android:layout_height="wrap_content">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:enableAutomaticInitialization="false"/>
     </LinearLayout>
 
     <LinearLayout
@@ -63,25 +69,26 @@
 
         <LinearLayout
             android:background="@drawable/border2"
-            android:layout_width="1400px"
+            android:layout_width="match_parent"
             android:layout_height="200px"
             android:layout_gravity="center"
             android:paddingLeft="20px"
             android:layout_marginTop="20px"
             android:layout_marginBottom="20px">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_margin="10dp"
-            android:layout_gravity="center"
-            android:textSize="40px"
-            android:textAlignment="gravity"
-            android:fontFamily="@font/font_r"
-            android:textColorHint="@color/white"
-            android:inputType="none"
-            android:hint="질문 추가...">
-        </EditText>
+            <EditText
+                android:id="@+id/commentEdit"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="40px"
+                android:textAlignment="gravity"
+                android:fontFamily="@font/font_r"
+                android:textColorHint="@color/white"
+                android:inputType="none"
+                android:hint="질문 추가...">
+            </EditText>
 
         </LinearLayout>
 
@@ -90,7 +97,8 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="930px"
+                android:layout_weight="3.2"
+                android:layout_width="0dp"
                 android:layout_height="100px"
                 android:paddingLeft="10px"
                 android:layout_gravity="center"
@@ -109,6 +117,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/timeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -121,50 +130,52 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_marginTop="4dp"
-                android:layout_marginLeft="30px"
-                android:layout_width="105px"
-                android:layout_height="105px"
-                android:layout_marginBottom="10dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <ImageButton
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="30px"
+                    android:layout_width="105px"
+                    android:layout_height="105px"
+                    android:layout_marginBottom="10dp"
 
-                android:background="@drawable/plusbutton"
-                android:id="@+id/deleteCardView">
+                    android:background="@drawable/plusbutton"
+                    android:id="@+id/timeBtn"/>
+            </LinearLayout>
                 <!-- '삭제 버튼' : id값:deleteCardView -->
-            </ImageView>
 
             <Button
-                android:layout_width="wrap_content"
+                android:id="@+id/commentBtn"
+                android:layout_weight="1.2"
+                android:layout_width="0dp"
                 android:layout_height="110px"
-                android:layout_marginLeft="20px"
-                android:textColor="@color/white"
                 android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
                 android:background="@drawable/border3"
-                android:text="등록하기">
-            </Button>
+                android:text="등록하기"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
 
     </LinearLayout>
 
+
     <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="410dp"
-        android:layout_marginTop="120px"
-        android:layout_marginLeft="20px"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
         android:orientation="vertical">
 
-        <TextView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_l"
-            android:textSize="50px"
-            android:text="아직 질문이 없습니다"
-            android:textColor="@color/white">
-
-        </TextView>
-
+            android:layout_height="match_parent" />
     </LinearLayout>
+
 
 </LinearLayout>
